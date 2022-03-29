@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FD000000"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trailer_header">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            app:autoPlay="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:showFullScreenButton="false"
+            app:videoId="WYAMLoLOVYI">
+
+
+        </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            app:autoPlay="false"
+            app:layout_constraintBottom_toTopOf="@+id/youtube_player_view3"
+            app:layout_constraintEnd_toEndOf="@+id/youtube_player_view1"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintStart_toStartOf="@+id/youtube_player_view1"
+            app:layout_constraintTop_toBottomOf="@+id/youtube_player_view1"
+            app:showFullScreenButton="false"
+            app:videoId="sdo8HDPgc04">
+
+        </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            app:autoPlay="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/youtube_player_view2"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintStart_toStartOf="@+id/youtube_player_view2"
+            app:showFullScreenButton="false"
+            app:videoId="0dOFZvitwhM">
+
+        </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/trailer_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trailer_bgheader" />
+
+    <ImageView
+        android:id="@+id/trailer_header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/trailer_bg"
+        app:layout_constraintEnd_toEndOf="@+id/trailer_bg"
+        app:layout_constraintStart_toStartOf="@+id/trailer_bg"
+        app:layout_constraintTop_toTopOf="@+id/trailer_bg"
+        app:srcCompat="@drawable/movie_trailer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

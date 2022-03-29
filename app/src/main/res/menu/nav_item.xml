@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/now_playing"
+        android:icon="@drawable/ic_baseline_live_tv_24"
+        android:title="Now Playing"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+
+    <item
+        android:id="@+id/trailer"
+        android:icon="@drawable/ic_tl"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff"
+        android:title="Movie Trailer"/>
+
+    <item
+        android:id="@+id/us"
+        android:icon="@drawable/ic_us"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff"
+        android:title="About us"/>
+
+</menu>
